@@ -2,7 +2,7 @@
 
 ### Info ###
 
-Auth service user to authenticate uses and also different services.
+Auth service used to authenticate uses and also different services.
 
 ### Config ###
 
