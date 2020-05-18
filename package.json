@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "auth",
   "main": "index.js",
+  "preinstall": "rm package-lock.json",
   "scripts": {
-    "start": "node app.js"
+    "start": "node index.js"
   },
   "engines": {
     "node": "8.7.0",
