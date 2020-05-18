@@ -5,7 +5,6 @@ const authRouter = require('./auth/authRouter');
 const app = express();
 app.use(express.json());
 app.set('port', (process.env.PORT || 3000));
-app.use('/static', express.static('public'));
 
 
 
