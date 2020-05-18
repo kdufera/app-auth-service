@@ -5,6 +5,11 @@ const authRouter = require('./auth/authRouter');
 const app = express();
 app.use(express.json());
 app.set('port', (process.env.PORT || 3000));
+app.use('/static', express.static('public'));
+app.set('trust proxy', 1); //  it will not register the proxy’s IP address as the client IP address  
+
+
+
 
 app.use(function(req, res, next) {
     res.header('Access-Control-Allow-Origin', "*");

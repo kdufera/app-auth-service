@@ -49,9 +49,7 @@ UserSchema.methods.generateTestUser = function () {
     let iss = new Date();
     user.token = jwt.sign({ _id: user._id.toHexString(),email:user.email,access,iss}, "test_jwt_key").toString()
     return user.save().then((acg) => {  
-        if(!acg) {
-            return Promise.reject({errmsg: "unable to generate user"});
-        } else {
+        if(acg) {
             return Promise.resolve("user generated"); 
         }
     });
