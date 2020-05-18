@@ -1,29 +1,17 @@
-# README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
 
-### What is this repository for? ###
+### Info ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+Auth service user to authenticate uses and also different services.
 
-### How do I get set up? ###
+### Config ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+* Install MongoDB and start MongoDB locally
+* Install nodemon  `npm i nodemon -g`
+* `cd /auth` or the main directory and run `npm i` to install all required packages.
 
-### Contribution guidelines ###
+### Run ###
 
-* Writing tests
-* Code review
-* Other guidelines
+* `nodemon .` to run the app
 
 ### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
