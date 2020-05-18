@@ -4,7 +4,7 @@ const mongoose = require ('mongoose');
 
 mongoose.Promise = global.Promise;
 mongoose.set('useCreateIndex', true);
-mongoose.connect("mongodb://localhost:27017/userAuth",{ 
+mongoose.connect("https://www.mlab.com/databases/heroku_5077c36g/userAuth",{ 
   useNewUrlParser: true,
   useUnifiedTopology: true 
 });
