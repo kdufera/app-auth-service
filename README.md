@@ -13,5 +13,3 @@ Auth service user to authenticate uses and also different services.
 ### Run ###
 
 * `nodemon .` to run the app
-
-### Who do I talk to? ###
