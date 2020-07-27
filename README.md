@@ -1,8 +1,9 @@
 
 
+
 ### Info ###
 
-Auth service used to authenticate uses and also different services.
+This a basic Node JS Auth service used to authenticate users and different services. This services incorporates bicrypt and hashing to encrypt, authenticate and issue a self signed JWT token to different systems for authentication and authorization purposes. 
 
 ### Config ###
 
@@ -12,4 +13,4 @@ Auth service used to authenticate uses and also different services.
 
 ### Run ###
 
-* `nodemon .` to run the app
+* `nodemon .` Run the app
