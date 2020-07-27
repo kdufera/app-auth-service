@@ -3,7 +3,7 @@
 
 ### Info ###
 
-This a basic Node JS Auth service used to authenticate users and different services. This services incorporates bicrypt and hashing to encrypt, authenticate and issue a self signed JWT token to different systems for authentication and authorization purposes. 
+This is a basic Node JS Auth service used to authenticate users and different services. This services incorporates bicrypt and hashing to encrypt, authenticate and issue a self signed JWT token to different systems for authentication and authorization purposes. 
 
 ### Config ###
 
