@@ -13,4 +13,4 @@ This is a basic Node JS Auth service used to authenticate users and different se
 
 ### Run ###
 
-* `nodemon .` Run the app
+* `nodemon .` 
