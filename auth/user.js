@@ -49,27 +49,27 @@ UserSchema.methods.generateTestUser = function () {
     let iss = new Date();
     user.token = jwt.sign({ _id: user._id.toHexString(),email:user.email,access,iss}, "test_jwt_key").toString()
     return user.save().then((acg) => {  
-        if(acg) {
+        if(!acg) {
             return Promise.reject({errmsg: "unable to generate user"});
         } else {
-            return Promise.resolve("user generated"); 
+            return Promise.resolve(acg.token); 
         }
     });
 }
 
-UserSchema.pre('save' , function(next) {
-    var user = this;
-    if(user.isModified('name')) {
-        bcrypt.genSalt(10, (err, salt) => {
-            bcrypt.hash(user.name,salt, (err, hash) => {
-                user.name = hash;
-                next();
-            });
-        });
-    } else {
-        next();
-    }
-});
+// UserSchema.pre('save' , function(next) {
+//     var user = this;
+//     if(user.isModified('name')) {
+//         bcrypt.genSalt(10, (err, salt) => {
+//             bcrypt.hash(user.name,salt, (err, hash) => {
+//                 user.name = hash;
+//                 next();
+//             });
+//         });
+//     } else {
+//         next();
+//     }
+// });
 
 UserSchema.pre('save' , function(next) {
     var user = this;
