@@ -15,9 +15,9 @@ This is a basic Node JS Auth service used to authenticate users and different se
 
 * `nodemon .` 
 
-### APIs ###
+## APIs ##
 
-## Create user ##
+###  Create user ### 
 * URL: `http://localhost:3000/api/v1/auth/createUser`
 * Body: `{
 	"name": "Test2",
@@ -27,7 +27,7 @@ This is a basic Node JS Auth service used to authenticate users and different se
 `
 * Response: JWT token
 
-## Login user ##
+###  Login user ### 
 * URL: `http://localhost:3000/api/v1/auth/login`
 * Body: `{
 	"username": "test11@gmail.edu",
